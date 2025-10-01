@@ -13,16 +13,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Step 5 & 6: Get references to Button and TextView
         Button myButton = findViewById(R.id.myButton);
         TextView myTextView = findViewById(R.id.myTextView);
 
-        // Set a click listener on the button
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Code to run when the button is clicked
                 myTextView.setText("The text has been changed!");
+            }
+        });
+
+        Button colorButton = findViewById(R.id.colorButton);
+        colorButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myTextView.setTextColor(getResources().getColor(android.R.color.holo_red_dark));
             }
         });
     }
