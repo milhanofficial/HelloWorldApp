@@ -30,5 +30,14 @@ public class MainActivity extends AppCompatActivity {
                 myTextView.setTextColor(getResources().getColor(android.R.color.holo_red_dark));
             }
         });
+
+        Button bgColorButton = findViewById(R.id.bgColorButton);
+        bgColorButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                View rootView = findViewById(android.R.id.content);
+                rootView.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light));
+            }
+        });
     }
 }
