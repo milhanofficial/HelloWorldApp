@@ -1,5 +1,5 @@
 package com.example.helloworldapp;
-//Code for revert
+//Code for reverting
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
